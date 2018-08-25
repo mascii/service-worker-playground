@@ -753,7 +753,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-new __WEBPACK_IMPORTED_MODULE_0__lib_service_worker__["a" /* default */]('/pie_chart_image_proxy/worker-compiled.js', { scope: '/pie_chart_image_proxy/' }).catch(function (message) {
+new __WEBPACK_IMPORTED_MODULE_0__lib_service_worker__["a" /* default */]('./worker-compiled.js', { scope: './' }).catch(function (message) {
   return alert(message);
 });
 

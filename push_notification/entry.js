@@ -16,7 +16,7 @@ const urlBase64ToUint8Array = (base64String) => {
 const arrayBufferToBase64 = buf =>
   window.btoa(String.fromCharCode.apply(null, new Uint8Array(buf))).replace(/\+/g, '-').replace(/\//g, '_')
 
-new ServiceWorker('/push_notification/worker-compiled.js', { scope: '/push_notification/' })
+new ServiceWorker('./worker-compiled.js', { scope: './' })
   .then((worker) => {
     worker.pushManager.subscribe({
       userVisibleOnly: true,

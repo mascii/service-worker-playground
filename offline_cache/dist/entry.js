@@ -130,7 +130,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-new __WEBPACK_IMPORTED_MODULE_0__lib_service_worker__["a" /* default */]('/offline_cache/worker-compiled.js', { scope: '/offline_cache/' }).catch(function (message) {
+new __WEBPACK_IMPORTED_MODULE_0__lib_service_worker__["a" /* default */]('./worker-compiled.js', { scope: './' }).catch(function (message) {
   return alert(message);
 });
 

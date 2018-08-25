@@ -107,7 +107,7 @@ var arrayBufferToBase64 = function arrayBufferToBase64(buf) {
   return window.btoa(String.fromCharCode.apply(null, new Uint8Array(buf))).replace(/\+/g, '-').replace(/\//g, '_');
 };
 
-new __WEBPACK_IMPORTED_MODULE_0__lib_service_worker__["a" /* default */]('/push_notification/worker-compiled.js', { scope: '/push_notification/' }).then(function (worker) {
+new __WEBPACK_IMPORTED_MODULE_0__lib_service_worker__["a" /* default */]('./worker-compiled.js', { scope: './' }).then(function (worker) {
   worker.pushManager.subscribe({
     userVisibleOnly: true,
     applicationServerKey: urlBase64ToUint8Array(undefined)
