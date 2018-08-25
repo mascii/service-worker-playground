@@ -755,7 +755,7 @@ self.addEventListener('install', function () {
 self.addEventListener('fetch', function (e) {
   var requestUrl = __WEBPACK_IMPORTED_MODULE_0_url___default.a.parse(e.request.url);
 
-  if (requestUrl.hostname === '127.0.0.1' && requestUrl.pathname === '/pie_chart_image_proxy/chart.gif') {
+  if (requestUrl.pathname.includes('/pie_chart_image_proxy/chart.gif')) {
     var query = __WEBPACK_IMPORTED_MODULE_1_qs___default.a.parse(requestUrl.query);
     var targetKeys = Object.keys(query).filter(function (q) {
       return !isNaN(parseFloat(query[q]));
