@@ -42,6 +42,6 @@ export default class PieChart {
       }).join('')
     }
 
-    return `<svg xmlns="http://www.w3.org/2000/svg" width="${validSize}" height="${validSize}" transform="rotate(-90,${validSize / 2.0},${validSize / 2.0})">${renderCircles()}</svg>`
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${validSize}" height="${validSize}" transform="rotate(-90)">${renderCircles()}</svg>`
   }
 }
